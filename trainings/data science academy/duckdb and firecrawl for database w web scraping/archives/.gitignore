@@ -1,0 +1,4 @@
+# Ignorar credenciais (não comitar senhas!)
+.env
+secrets.json
+13-Projeto.zip
