@@ -1,0 +1,27 @@
+# Prompt para o Agente de IA:
+
+Identifique o nome do cliente (pessoa), id do produto e o número de unidades a partir do texto de e-mail abaixo: 
+
+ {{ $json.snippet }}
+
+Gere como saída o nome da pessoa, id do produto e número de unidades.
+
+
+# Formato do parser:
+
+{
+"output": 
+"Nome da pessoa: Bob Silva  \nID do produto: 1000  \nNúmero de unidades: 2"
+}
+
+# Se tiver problemas, use assim:
+
+{
+"output": 
+"Nome da pessoa:  \nID do produto:  \nNúmero de unidades: "
+}
+
+
+# Nota: Caso não esteja retornando os e-mails mais recentes, desative o pin do formato JSON no nó (componente) Gmail Trigger.
+
+# Lembre-se de desativar o workflow quando não estiver usando para não consumir a camada gratuita do Groq.
